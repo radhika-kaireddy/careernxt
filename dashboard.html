@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerNXT - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+    <h2>Career Roadmap Generator</h2>
+    <input type="text" id="degree" placeholder="Degree">
+    <input type="text" id="interests" placeholder="Interests">
+    <textarea id="skills" placeholder="Enter skills (comma separated)"></textarea>
+   <select id="career">
+    <optgroup label="Technology">
+        <option>Data Analyst</option>
+        <option>Frontend Developer</option>
+        <option>Backend Developer</option>
+        <option>Full Stack Developer</option>
+        <option>AI/ML Engineer</option>
+        <option>Cybersecurity Analyst</option>
+        <option>Cloud Engineer</option>
+        <option>Software Tester</option>
+    </optgroup>
+    <optgroup label="Private Sector">
+        <option>Business Analyst</option>
+        <option>Digital Marketer</option>
+        <option>HR Executive</option>
+        <option>Sales Manager</option>
+        <option>Financial Analyst</option>
+        <option>Operations Manager</option>
+    </optgroup>
+    <optgroup label="Creative Careers">
+        <option>Actor</option>
+        <option>Dancer</option>
+        <option>Graphic Designer</option>
+        <option>Content Creator</option>
+        <option>Fashion Designer</option>
+        <option>Musician</option>
+    </optgroup>
+    <optgroup label="Government Jobs">
+        <option>IAS Officer</option>
+        <option>IPS Officer</option>
+        <option>Bank PO</option>
+        <option>SSC CGL Officer</option>
+        <option>Railway Officer</option>
+        <option>Defense Officer</option>
+        <option>Teacher (Govt)</option>
+        <option>Police Officer</option>
+    </optgroup>
+    <optgroup label="Healthcare">
+        <option>Doctor</option>
+        <option>Nurse</option>
+        <option>Pharmacist</option>
+    </optgroup>
+
+    <optgroup label="Entrepreneurship">
+        <option>Entrepreneur</option>
+        <option>Startup Founder</option>
+    </optgroup>
+</select>
+
+    <button onclick="generateRoadmap()">Generate Roadmap</button>
+    <button onclick="logout()">Logout</button>
+
+    <div class="result" id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
